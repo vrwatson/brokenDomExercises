@@ -8,22 +8,24 @@
       href="https://fonts.googleapis.com/css?family=Armata|Patua+One|Press+Start+2P"
       rel="stylesheet"
     />
-    <script rel="stylesheet" href="main.css" ></script>
+    <link
+      rel="stylesheet" href="./style.css"/>
+    <script src="./index.js" defer></script>
     <title>Br*k%n! D$M</title>
   </head>
   <body>
     <h1>Br*k%n! D$M</h1>
     <section>
       <h2>Disemvowel</h2>
-      <input id="name_to_disemvowel" type="number" />
-      <button onclick="disEmvowel()">Disemvowel</button>
+      <input id="name-to-disemvowel" type="text" />
+      <button onclick="disemvowel()" type="submit">Disemvowel</button>
       <p class="disemvowel-string"></p>
     </section>
     <section>
       <h2>Is Palindrome?</h2>
 
-      <input id="is-palindrome-input" type="password" />
-      <button onclick="isPalindrome">Is Palindrome?</button>
+      <input id="is-palindrome-input" type="text" />
+      <button onclick="isPalindrome()" type="submit">Is Palindrome?</button>
       <p id="is-palindrome-p"></p>
     </section>
     <section>
@@ -39,7 +41,7 @@
     <section>
       <h2>Favorite Number Stats</h2>
       <p id="sum-of-favorite-nums">Sum:</p>
-      <p id=average-of-favorite-nums>Average:</p>
+      <p id="average-of-favorite-nums">Average:</p>
       <h3>Odd Favorites</h3>
       <ul id="list-of-odd-favorite-nums"></ul>
     </section>
@@ -48,14 +50,14 @@
         <h2>Counter</h2>
         <p>Click Count: </p>
         <p id="click-count">0</p>
-        <button id="clicker" onclick="incrementCount()">Click!</button>
-        <button id="clicker" onclick="incrementCount()">RESET!</button>
+        <button id="clicker" onclick="incrementCount()" type="button">Click!</button>
+        <button id="reset" onclick="reset()" type="reset">RESET!</button>
     </section>
 
     <section>
         <h2>Shopping List</h2>
-        <input type="text" value="What should I buy?" placeholder="What should I buy?" id="add-item"/>
-        <button onclick="addItem()">Add Item</button>
+        <input type="text" placeholder="What should I buy?" id="add-item"/>
+        <button onclick="addItem()" type="submit">Add Item</button>
         <ul class="shopping-list">
 
         </ul>
@@ -63,7 +65,7 @@
 
     <section id="kill-selector">
         <h2 id="kill-button-header">Kill the button</h2>
-        <button id="kill-button" onclick="killButton()">Button</button>
+        <button id="kill-button" onclick="killButton()" type="button">Button</button>
     </section>
   </body>
 </html>
